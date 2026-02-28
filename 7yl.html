@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <!-- ✅ تصحيح viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>magkcod</title>
+
+<style>
+.top h1{
+    margin: 0;
+    color: black;
+}
+
+.top ul{
+    padding: 0;
+    margin: 0;
+}
+
+.top li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.top li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.top{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 20px;
+    flex-wrap: wrap; /* للجوال */
+}
+
+body{
+    background-color: midnightblue;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ✅ صندوق حول الموقع */
+.ff{
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    line-height: 1.6;
+    max-width: 1100px;   /* بدل width الثابت */
+    margin: 20px auto;
+}
+
+/* ✅ تحسين للجوال */
+@media (max-width: 600px){
+    .top{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top li{
+        margin: 10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="top">
+    <h1>magkcod</h1>
+    <ul>
+        <li><a href="index.html">الرئيسي</a></li>
+        <li><a href="log.html">اللغات</a></li>
+        <li><a href="7yl.html">عن الموقع</a></li>
+    </ul>
+</div>
+
+<div class="ff">
+    <h1>عن الموقع</h1>
+    <p>
+        هذا الموقع التعليمي تم إنشاؤه لمساعدة المبتدئين وكل من يرغب في دخول عالم البرمجة بطريقة سهلة وبسيطة.
+        يهدف الموقع إلى تقديم شرح واضح ومنظم لأشهر لغات البرمجة المستخدمة في الوقت الحالي، مع التركيز على
+        الفهم العملي والتطبيقي.
+    </p>
+
+    <p>
+        يوفر الموقع محتوى تعليميًا لعدة لغات برمجة مثل HTML وCSS وJavaScript وPython وJava وC++،
+        حيث يحتوي كل قسم على شرح للمفاهيم الأساسية، وأمثلة مبسطة تساعد المتعلم على الفهم خطوة بخطوة.
+    </p>
+
+    <p>
+        تم تصميم الموقع بواجهة نظيفة وسهلة الاستخدام لتناسب جميع المستويات، من المبتدئ إلى من يرغب
+        في تطوير مهاراته وبناء مشاريع عملية.
+    </p>
+
+    <p>
+        هذا الموقع هو بداية طريقك نحو تعلم البرمجة وبناء مستقبلك في مجال التقنية بثقة وثبات.
+    </p>
+</div>
+
+</body>
+</html>

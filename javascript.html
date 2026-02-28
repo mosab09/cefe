@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تعلم JavaScript – دليل شامل</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        direction: rtl;
+        line-height: 1.6;
+        margin: 0;
+        background: #f4f4f4;
+        color: #333;
+    }
+    header, footer {
+        background: #ff5722;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    main {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    h2, h3 { color: #ff5722; }
+    code {
+        background: #eee;
+        padding: 5px;
+        border-radius: 5px;
+        display: block;
+        margin: 5px 0;
+        direction: ltr;
+    }
+    section { margin-bottom: 30px; }
+    .example {
+        background: #f9f9f9;
+        border-left: 4px solid #ff5722;
+        padding: 10px;
+        margin-top: 5px;
+    }
+    .top {
+        background-color:  #ff5722;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin: 10px ;
+        }
+         .top h1 {
+             margin-top: 0px;
+             color: black;
+         }
+         .top li {
+             list-style: none;
+             display: inline-block;
+             margin-left: 15px;
+         }
+         .top li a {
+             text-decoration: none;
+             color: black;
+             font-weight: bold;
+         }
+         
+</style>
+</head>
+<body>
+
+<div class="top">
+    <h1>magkcod</h1>
+    <li><a href="index.html">الرئيسي</a></li>
+    <li><a href="log.html">اللغات</a></li>
+    <li><a href="7yl.html">عن الموقع</a></li>
+</div>
+
+<header>
+    <h1>دليل شامل لتعلم JavaScript</h1>
+    <h1>أهم المفاهيم والأمثلة العملية لتعلم JS بسرعة</h1>
+</header>
+
+<main>
+
+<section>
+<h2>مقدمة</h2>
+<p>JavaScript هي لغة برمجة تُستخدم لجعل صفحات الويب تفاعلية. يمكنك التحكم بالمحتوى، الأحداث، الرسوم، وإضافة الديناميكية للمواقع.</p>
+</section>
+
+<section>
+<h2>1️⃣ إضافة JavaScript</h2>
+<div class="example">
+<code>&lt;script&gt;alert("مرحباً!");&lt;/script&gt;</code>
+<p>كتابة JS داخل ملف HTML.</p>
+</div>
+<div class="example">
+<code>&lt;script src="script.js"&gt;&lt;/script&gt;</code>
+<p>ربط ملف JS خارجي.</p>
+</div>
+</section>
+
+<section>
+<h2>2️⃣ المتغيرات</h2>
+<div class="example">
+<code>let name = "أحمد";</code>
+<p>تعريف متغير قابل للتغيير.</p>
+</div>
+<div class="example">
+<code>const pi = 3.14;</code>
+<p>متغير ثابت لا يمكن تغييره.</p>
+</div>
+<div class="example">
+<code>var age = 25;</code>
+<p>طريقة قديمة لتعريف متغير.</p>
+</div>
+</section>
+
+<section>
+<h2>3️⃣ الأنواع (Data Types)</h2>
+<div class="example">
+<code>let number = 10; // رقم</code>
+<code>let name = "أحمد"; // نص</code>
+<code>let isTrue = true; // بوليان</code>
+<code>let x; // undefined</code>
+</div>
+</section>
+
+<section>
+<h2>4️⃣ العمليات الحسابية</h2>
+<div class="example">
+<code>let sum = 5 + 3;</code>
+<code>let diff = 10 - 4;</code>
+<code>let mult = 6 * 2;</code>
+<code>let div = 8 / 2;</code>
+<code>let mod = 7 % 3;</code>
+</div>
+</section>
+
+<section>
+<h2>5️⃣ الشروط (Conditions)</h2>
+<div class="example">
+<code>
+if (age &gt;= 18) {<br>
+&nbsp;&nbsp;console.log("بالغ");<br>
+} else {<br>
+&nbsp;&nbsp;console.log("قاصر");<br>
+}
+</code>
+</div>
+</section>
+
+<section>
+<h2>6️⃣ الحلقات (Loops)</h2>
+<div class="example">
+<code>for (let i=0; i&lt;5; i++) { console.log(i); }</code>
+<p>حلقة for للطباعة 0-4.</p>
+</div>
+<div class="example">
+<code>let i = 0; while(i&lt;5){ console.log(i); i++; }</code>
+<p>حلقة while.</p>
+</div>
+</section>
+
+<section>
+<h2>7️⃣ الدوال (Functions)</h2>
+<div class="example">
+<code>
+function greet(name) {<br>
+&nbsp;&nbsp;return "مرحباً " + name;<br>
+}<br>
+console.log(greet("أحمد"));
+</code>
+<p>دالة ترجع رسالة ترحيب.</p>
+</div>
+</section>
+
+<section>
+<h2>8️⃣ الأحداث (Events)</h2>
+<div class="example">
+<code>
+&lt;button onclick="alert('تم الضغط!')"&gt;اضغط هنا&lt;/button&gt;
+</code>
+<p>تنفيذ JS عند الضغط على زر.</p>
+</div>
+</section>
+
+<section>
+<h2>9️⃣ DOM – التحكم في الصفحة</h2>
+<div class="example">
+<code>
+document.getElementById("demo").innerHTML = "تم التغيير!";
+</code>
+<p>تغيير محتوى عنصر بالصفحة.</p>
+</div>
+<div class="example">
+<code>
+document.querySelector(".box").style.backgroundColor = "red";
+</code>
+<p>تغيير لون خلفية عنصر.</p>
+</div>
+</section>
+
+<section>
+<h2>10️⃣ المصفوفات (Arrays)</h2>
+<div class="example">
+<code>let fruits = ["تفاح","موز","برتقال"];</code>
+<code>console.log(fruits[0]); // تفاح</code>
+</div>
+</section>
+
+<section>
+<h2>11️⃣ الكائنات (Objects)</h2>
+<div class="example">
+<code>
+let person = {<br>
+&nbsp;&nbsp;name: "أحمد",<br>
+&nbsp;&nbsp;age: 25<br>
+};<br>
+console.log(person.name);
+</code>
+</div>
+</section>
+
+<section>
+<h2>12️⃣ الارتباط مع HTML</h2>
+<div class="example">
+<code>
+&lt;p id="demo"&gt;النص الأصلي&lt;/p&gt;<br>
+&lt;button onclick="document.getElementById('demo').innerHTML='تم التغيير!'"&gt;تغيير النص&lt;/button&gt;
+</code>
+</div>
+</section>
+
+<section>
+<h2>الختام</h2>
+<p>بهذا الموقع لديك أهم مفاهيم JavaScript للمبتدئين مع أمثلة عملية يمكن تعديلها وتجربتها مباشرة على المتصفح.  
+الخطوة التالية: تعلم DOM Events، التخزين المحلي (LocalStorage)، وAJAX لتصبح مطور ويب متكامل.</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2024 موقع تعلم البرمجة. جميع الحقوق محفوظة.</p>
+</footer>
+</body>
+</html>

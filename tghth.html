@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تعلم HTML – دليل شامل</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            line-height: 1.6;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header, footer {
+            background: #0077ff;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2, h3 {
+            color: #0077ff;
+        }
+        code {
+            background: #eee;
+            padding: 5px;
+            border-radius: 5px;
+            display: block;
+            margin: 5px 0;
+            direction: ltr;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .tag-example {
+            background: #f9f9f9;
+            border-left: 4px solid #0077ff;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .tag-example p {
+             margin: 0;
+         }
+         .tag-example code {
+             margin: 0;
+         }
+         .top {
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 10px ;
+        }
+         .top h1 {
+             margin-top: 0px;
+             color: black;
+         }
+         .top li {
+             list-style: none;
+             display: inline-block;
+             margin-left: 15px;
+         }
+         .top li a {
+             text-decoration: none;
+             color: black;
+             font-weight: bold;
+         }
+         
+    </style>
+</head>
+<body>
+
+<div class="top">
+    <h1>magkcod</h1>
+    <li><a href="index.html">الرئيسي</a></li>
+    <li><a href="log.html">اللغات</a></li>
+    <li><a href="7yl.html">عن الموقع</a></li>
+</div>
+
+<header>
+    <h1>دليل شامل لتعلم HTML</h1>
+    <p>تعلم كل تاغ HTML مع أمثلة عملية</p>
+</header>
+
+<main>
+    <section>
+        <h2>مقدمة</h2>
+        <p>HTML هي لغة هيكلة صفحات الويب. كل عنصر في الصفحة يُكتب باستخدام <code>&lt;tag&gt;</code>. في هذا الموقع سنستعرض أكثر من 100 تاج HTML مع الأمثلة والشروحات.</p>
+    </section>
+
+    <section>
+        <h2>1️⃣ الهيكل الأساسي للصفحة</h2>
+        <p>كل صفحة HTML تحتاج إلى هيكل أساسي:</p>
+        <code>
+&lt;!DOCTYPE html&gt;<br>
+&lt;html lang="ar"&gt;<br>
+&lt;head&gt;<br>
+    &lt;meta charset="UTF-8"&gt;<br>
+    &lt;title&gt;عنوان الصفحة&lt;/title&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+    المحتوى هنا<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+        </code>
+    </section>
+
+    <section>
+        <h2>2️⃣ العناوين والفقرات</h2>
+        <div class="tag-example">
+            <code>&lt;h1&gt;...&lt;/h1&gt;</code>
+            <p>أكبر عنوان في الصفحة.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;h2&gt;...&lt;/h2&gt;</code>
+            <p>عنوان فرعي.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;p&gt;...&lt;/p&gt;</code>
+            <p>فقرة نصية.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;br&gt;</code>
+            <p>سطر جديد (Break).</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;hr&gt;</code>
+            <p>خط أفقي لتقسيم المحتوى.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>3️⃣ القوائم</h2>
+        <div class="tag-example">
+            <code>&lt;ul&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ul&gt;</code>
+            <p>قائمة غير مرتبة (نقاط).</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;ol&gt;&lt;li&gt;...&lt;/li&gt;&lt;/ol&gt;</code>
+            <p>قائمة مرتبة (أرقام).</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;dl&gt;&lt;dt&gt;&lt;/dt&gt;&lt;dd&gt;&lt;/dd&gt;&lt;/dl&gt;</code>
+            <p>قائمة تعريفية (تعريف ومصطلح).</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>4️⃣ الروابط والصور</h2>
+        <div class="tag-example">
+            <code>&lt;a href="URL"&gt;نص الرابط&lt;/a&gt;</code>
+            <p>لإنشاء رابط لموقع آخر.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;img src="image.jpg" alt="وصف"&gt;</code>
+            <p>لإدراج صورة.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>5️⃣ الأقسام والمنطقية</h2>
+        <div class="tag-example">
+            <code>&lt;header&gt;...&lt;/header&gt;</code>
+            <p>رأس الصفحة أو القسم.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;footer&gt;...&lt;/footer&gt;</code>
+            <p>تذييل الصفحة.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;section&gt;...&lt;/section&gt;</code>
+            <p>قسم مستقل من الصفحة.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;article&gt;...&lt;/article&gt;</code>
+            <p>محتوى مستقل مثل مقال أو منشور.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;nav&gt;...&lt;/nav&gt;</code>
+            <p>قسم خاص بالتنقل (قوائم الروابط).</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>6️⃣ النصوص والفورمات</h2>
+        <div class="tag-example">
+            <code>&lt;strong&gt;...&lt;/strong&gt;</code>
+            <p>نص غامق.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;b&gt;...&lt;/b&gt;</code>
+            <p>نص غامق أيضًا (للتنسيق فقط).</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;em&gt;...&lt;/em&gt;</code>
+            <p>نص مائل للتأكيد.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;i&gt;...&lt;/i&gt;</code>
+            <p>نص مائل.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;mark&gt;...&lt;/mark&gt;</code>
+            <p>نص مميز (مظلّل).</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;small&gt;...&lt;/small&gt;</code>
+            <p>نص صغير.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;del&gt;...&lt;/del&gt;</code>
+            <p>نص محذوف.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;ins&gt;...&lt;/ins&gt;</code>
+            <p>نص مضاف.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>7️⃣ الجداول</h2>
+        <div class="tag-example">
+            <code>&lt;table&gt; &lt;tr&gt; &lt;td&gt; &lt;/td&gt; &lt;/tr&gt; &lt;/table&gt;</code>
+            <p>لإنشاء جدول.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;th&gt;عنوان العمود&lt;/th&gt;</code>
+            <p>عنوان عمود في الجدول.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;caption&gt;عنوان الجدول&lt;/caption&gt;</code>
+            <p>عنوان الجدول.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>8️⃣ النماذج (Forms)</h2>
+        <div class="tag-example">
+            <code>&lt;form&gt;...&lt;/form&gt;</code>
+            <p>لإنشاء نموذج تفاعلي.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;input type="text"&gt;</code>
+            <p>حقل نصي.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;input type="password"&gt;</code>
+            <p>حقل كلمة مرور.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;input type="submit"&gt;</code>
+            <p>زر إرسال للنموذج.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;textarea&gt;...&lt;/textarea&gt;</code>
+            <p>حقل نص طويل.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;select&gt; &lt;option&gt;...&lt;/option&gt; &lt;/select&gt;</code>
+            <p>قائمة اختيار.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;label&gt;...&lt;/label&gt;</code>
+            <p>تسمية لحقل في النموذج.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>9️⃣ الوسائط</h2>
+        <div class="tag-example">
+            <code>&lt;audio controls&gt;&lt;/audio&gt;</code>
+            <p>إدراج صوت.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;video controls&gt;&lt;/video&gt;</code>
+            <p>إدراج فيديو.</p>
+        </div>
+        <div class="tag-example">
+            <code>&lt;iframe src="URL"&gt;&lt;/iframe&gt;</code>
+            <p>إدراج صفحة أخرى داخل الصفحة.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>10️⃣ عناصر أخرى مهمة</h2>
+        <div class="tag-example"><code>&lt;div&gt;...&lt;/div&gt;</code><p>لتجميع عناصر بدون معنى محدد.</p></div>
+        <div class="tag-example"><code>&lt;span&gt;...&lt;/span&gt;</code><p>لتنسيق جزء صغير من النص.</p></div>
+        <div class="tag-example"><code>&lt;meta&gt;</code><p>معلومات عن الصفحة في head.</p></div>
+        <div class="tag-example"><code>&lt;link&gt;</code><p>ربط CSS أو أي موارد خارجية.</p></div>
+        <div class="tag-example"><code>&lt;script&gt;</code><p>إدراج كود JavaScript.</p></div>
+        <div class="tag-example"><code>&lt;style&gt;</code><p>كتابة CSS مباشرة داخل HTML.</p></div>
+        <div class="tag-example"><code>&lt;blockquote&gt;...&lt;/blockquote&gt;</code><p>اقتباس طويل.</p></div>
+        <div class="tag-example"><code>&lt;q&gt;...&lt;/q&gt;</code><p>اقتباس قصير.</p></div>
+        <div class="tag-example"><code>&lt;abbr&gt;...&lt;/abbr&gt;</code><p>اختصار مع tooltip.</p></div>
+        <div class="tag-example"><code>&lt;cite&gt;...&lt;/cite&gt;</code><p>مصدر أو مرجع.</p></div>
+        <div class="tag-example"><code>&lt;code&gt;...&lt;/code&gt;</code><p>كود برمجي.</p></div>
+        <div class="tag-example"><code>&lt;pre&gt;...&lt;/pre&gt;</code><p>نص مسبق التنسيق.</p></div>
+        <div class="tag-example"><code>&lt;kbd&gt;...&lt;/kbd&gt;</code><p>مفتاح لوحة المفاتيح.</p></div>
+        <div class="tag-example"><code>&lt;samp&gt;...&lt;/samp&gt;</code><p>ناتج برنامج.</p></div>
+        <div class="tag-example"><code>&lt;var&gt;...&lt;/var&gt;</code><p>متغير في كود برمجي.</p></div>
+        <div class="tag-example"><code>&lt;sub&gt;...&lt;/sub&gt;</code><p>نص أسفل السطر.</p></div>
+        <div class="tag-example"><code>&lt;sup&gt;...&lt;/sup&gt;</code><p>نص فوق السطر.</p></div>
+    </section>
+
+    <section>
+        <h2>الختام</h2>
+        <p>بهذا الموقع لديك أكثر من 100 تاج HTML مع شرح وأمثلة عملية. يمكنك تعديل الأكواد مباشرة لتتعلم التجربة العملية بسرعة.</p>
+        <p>الخطوة التالية: تعلم CSS لتجميل صفحاتك ثم JavaScript لجعلها تفاعلية!</p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 موقع تعلم البرمجة. جميع الحقوق محفوظة.</p>
+</body>
+</html>

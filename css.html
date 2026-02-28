@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>تعلم CSS – دليل شامل</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            line-height: 1.6;
+            margin: 0;
+            background: #f4f4f4;
+            color: #333;
+        }
+        header, footer {
+            background: #28a745;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            max-width: 900px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        h2, h3 {
+            color: #28a745;
+        }
+        code {
+            background: #eee;
+            padding: 5px;
+            border-radius: 5px;
+            display: block;
+            margin: 5px 0;
+            direction: ltr;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        .example {
+            background: #f9f9f9;
+            border-left: 4px solid #28a745;
+            padding: 10px;
+            margin-top: 5px;
+        }
+        .top {
+            background-color:  #28a745;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            border-radius: 20px;
+            margin: 10px ;
+        }
+        
+         .top h1 {
+             margin-top: 0px;
+             color: black;
+         }
+         .top li {
+             list-style: none;
+             display: inline-block;
+             margin-left: 15px;
+         }
+         .top li a {
+             text-decoration: none;
+             color: black;
+             font-weight: bold;
+         }
+         
+    </style>
+</head>
+<body>
+
+<div class="top">
+    <h1>magkcod</h1>
+    <li><a href="index.html">الرئيسي</a></li>
+    <li><a href="log.html">اللغات</a></li>
+    <li><a href="7yl.html">عن الموقع</a></li>
+</div>
+
+<header>
+    <h1>دليل شامل لتعلم CSS</h1>
+    <h1>تعلم خصائص CSS مع أمثلة عملية</h1>
+</header>
+
+<main>
+    <section>
+        <h2>مقدمة</h2>
+        <p>CSS هي لغة تصميم صفحات الويب. تستخدم لتنسيق النصوص، الألوان، الخلفيات، التخطيطات، والتحكم في شكل كل عناصر الصفحة.</p>
+    </section>
+
+    <section>
+        <h2>1️⃣ طريقة إضافة CSS</h2>
+        <div class="example">
+            <code>&lt;style&gt; h1 { color: red; } &lt;/style&gt;</code>
+            <p>كتابة CSS داخل ملف HTML في وسم &lt;head&gt;</p>
+        </div>
+        <div class="example">
+            <code>&lt;link rel="stylesheet" href="style.css"&gt;</code>
+            <p>ربط ملف CSS خارجي.</p>
+        </div>
+        <div class="example">
+            <code>&lt;h1 style="color: blue;"&gt;عنوان&lt;/h1&gt;</code>
+            <p>كتابة CSS مباشرة داخل وسم HTML.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>2️⃣ الألوان والخلفيات</h2>
+        <div class="example">
+            <code>color: red;</code>
+            <p>لون النص.</p>
+        </div>
+        <div class="example">
+            <code>background-color: yellow;</code>
+            <p>لون خلفية العنصر.</p>
+        </div>
+        <div class="example">
+            <code>opacity: 0.5;</code>
+            <p>شفافية العنصر.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>3️⃣ النصوص والخطوط</h2>
+        <div class="example">
+            <code>font-size: 20px;</code>
+            <p>حجم الخط.</p>
+        </div>
+        <div class="example">
+            <code>font-family: Arial, sans-serif;</code>
+            <p>نوع الخط.</p>
+        </div>
+        <div class="example">
+            <code>text-align: center;</code>
+            <p>محاذاة النص.</p>
+        </div>
+        <div class="example">
+            <code>font-weight: bold;</code>
+            <p>سمك الخط.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>4️⃣ الحدود والتنسيق</h2>
+        <div class="example">
+            <code>border: 2px solid black;</code>
+            <p>حد حول العنصر.</p>
+        </div>
+        <div class="example">
+            <code>border-radius: 10px;</code>
+            <p>تدوير الزوايا.</p>
+        </div>
+        <div class="example">
+            <code>padding: 10px;</code>
+            <p>المسافة الداخلية داخل العنصر.</p>
+        </div>
+        <div class="example">
+            <code>margin: 15px;</code>
+            <p>المسافة الخارجية حول العنصر.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>5️⃣ العرض والارتفاع</h2>
+        <div class="example">
+            <code>width: 200px;</code>
+            <p>عرض العنصر.</p>
+        </div>
+        <div class="example">
+            <code>height: 100px;</code>
+            <p>ارتفاع العنصر.</p>
+        </div>
+        <div class="example">
+            <code>max-width: 500px;</code>
+            <p>أقصى عرض للعنصر.</p>
+        </div>
+        <div class="example">
+            <code>min-height: 50px;</code>
+            <p>أقل ارتفاع للعنصر.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>6️⃣ التخطيط (Layout)</h2>
+        <div class="example">
+            <code>display: block;</code>
+            <p>العنصر يظهر ككتلة.</p>
+        </div>
+        <div class="example">
+            <code>display: inline;</code>
+            <p>العنصر يظهر بجانب العناصر الأخرى.</p>
+        </div>
+        <div class="example">
+            <code>display: flex;</code>
+            <p>تخطيط مرن للعناصر الداخلية.</p>
+        </div>
+        <div class="example">
+            <code>position: relative;</code>
+            <p>موضع العنصر نسبي لمكانه الطبيعي.</p>
+        </div>
+        <div class="example">
+            <code>position: absolute;</code>
+            <p>موضع العنصر مطلق بالنسبة للأب.</p>
+        </div>
+        <div class="example">
+            <code>float: left;</code>
+            <p>تحريك العنصر لليسار.</p>
+        </div>
+        <div class="example">
+            <code>clear: both;</code>
+            <p>إيقاف العناصر العائمة من حوله.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>7️⃣ تأثيرات النصوص</h2>
+        <div class="example">
+            <code>text-decoration: underline;</code>
+            <p>خط تحت النص.</p>
+        </div>
+        <div class="example">
+            <code>text-transform: uppercase;</code>
+            <p>تحويل النص إلى أحرف كبيرة.</p>
+        </div>
+        <div class="example">
+            <code>letter-spacing: 2px;</code>
+            <p>تباعد بين الحروف.</p>
+        </div>
+        <div class="example">
+            <code>line-height: 1.5;</code>
+            <p>ارتفاع السطر.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>8️⃣ الخلفيات والتدرجات</h2>
+        <div class="example">
+            <code>background-image: url('image.jpg');</code>
+            <p>إضافة صورة خلفية.</p>
+        </div>
+        <div class="example">
+            <code>background-repeat: no-repeat;</code>
+            <p>عدم تكرار الصورة.</p>
+        </div>
+        <div class="example">
+            <code>background-size: cover;</code>
+            <p>تكبير الصورة لتغطية العنصر.</p>
+        </div>
+        <div class="example">
+            <code>background: linear-gradient(to right, red, yellow);</code>
+            <p>تدرج لوني.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>9️⃣ التفاعل والانتقالات</h2>
+        <div class="example">
+            <code>transition: all 0.3s ease;</code>
+            <p>تأثير انتقالي سلس عند تغير الخصائص.</p>
+        </div>
+        <div class="example">
+            <code>:hover { color: red; }</code>
+            <p>تغيير اللون عند مرور الماوس.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>الختام</h2>
+        <p>بهذا الموقع لديك أهم خصائص CSS مع أمثلة عملية يمكن تعديلها مباشرة. يمكنك الآن التعمق أكثر وتجربة CSS مع HTML لتصميم مواقعك الخاصة.</p>
+    </section>
+</main>
+
+<footer>
+    <p>© 2024 موقع تعلم البرمجة. جميع الحقوق محفوظة.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تعلم C++ – دليل شامل</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        direction: rtl;
+        line-height: 1.6;
+        margin: 0;
+        background: #f4f4f4;
+        color: #333;
+    }
+    header, footer {
+        background: #c62828;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    main {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    h1, h2, h3 { color: white; }
+    code {
+        background: #eee;
+        padding: 5px;
+        border-radius: 5px;
+        display: block;
+        margin: 5px 0;
+        direction: ltr;
+    }
+    section { margin-bottom: 30px; }
+    .example {
+        background: #f9f9f9;
+        border-left: 4px solid #c62828;
+        padding: 10px;
+        margin-top: 5px;
+    }
+    .top {
+        background-color:  #c62828;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin: 10px ;
+        }
+        
+         .top h1 {
+             margin-top: 0px;
+             color: black;
+         }
+         .top li {
+             list-style: none;
+             display: inline-block;
+             margin-left: 15px;
+         }
+         .top li a {
+             text-decoration: none;
+             color: black;
+             font-weight: bold;
+         }
+         
+</style>
+</head>
+<body>
+<div class="top">
+    <h1>magkcod</h1>
+    <li><a href="index.html">الرئيسي</a></li>
+    <li><a href="log.html">اللغات</a></li>
+    <li><a href="7yl.html">عن الموقع</a></li>
+</div>
+<header>
+    <h1>دليل شامل لتعلم C++</h1>
+    <h1>أهم المفاهيم والأمثلة العملية لتعلم C++ بسرعة</h1>
+</header>
+
+<main>
+
+<section>
+<h2>مقدمة</h2>
+<p>C++ هي لغة برمجة قوية وموجهة للكائنات، تُستخدم لتطوير الألعاب، التطبيقات، والبرمجيات عالية الأداء. سنتعرف على أساسيات اللغة مع أمثلة عملية.</p>
+</section>
+
+<section>
+<h2>1️⃣ أول برنامج C++</h2>
+<div class="example">
+<code>
+#include &lt;iostream&gt;<br>
+using namespace std;<br>
+int main() {<br>
+&nbsp;&nbsp;cout &lt;&lt; "مرحباً بالعالم!" &lt;&lt; endl;<br>
+&nbsp;&nbsp;return 0;<br>
+}
+</code>
+<p>البرنامج الأساسي لطباعة نص على الشاشة.</p>
+</div>
+</section>
+
+<section>
+<h2>2️⃣ المتغيرات والأنواع</h2>
+<div class="example">
+<code>int age = 25;          // عدد صحيح</code>
+<code>double height = 1.75; // رقم عشري</code>
+<code>char grade = 'A';     // حرف</code>
+<code>bool isStudent = true; // بوليان</code>
+</div>
+</section>
+
+<section>
+<h2>3️⃣ العمليات الحسابية</h2>
+<div class="example">
+<code>int sum = 5 + 3;</code>
+<code>int diff = 10 - 4;</code>
+<code>int mult = 6 * 2;</code>
+<code>double div = 8.0 / 2.0;</code>
+<code>int mod = 7 % 3;</code>
+<code>int exp = pow(2,3); // 8</code>
+</div>
+</section>
+
+<section>
+<h2>4️⃣ الشروط</h2>
+<div class="example">
+<code>
+if (age &gt;= 18) {<br>
+&nbsp;&nbsp;cout &lt;&lt; "بالغ" &lt;&lt; endl;<br>
+} else {<br>
+&nbsp;&nbsp;cout &lt;&lt; "قاصر" &lt;&lt; endl;<br>
+}
+</code>
+</div>
+</section>
+
+<section>
+<h2>5️⃣ الحلقات</h2>
+<div class="example">
+<code>
+for(int i=0;i&lt;5;i++){<br>
+&nbsp;&nbsp;cout &lt;&lt; i &lt;&lt; endl;<br>
+}
+</code>
+<p>حلقة for من 0 إلى 4.</p>
+<code>
+int i = 0;<br>
+while(i&lt;5){<br>
+&nbsp;&nbsp;cout &lt;&lt; i &lt;&lt; endl;<br>
+&nbsp;&nbsp;i++;<br>
+}
+</code>
+<p>حلقة while.</p>
+</div>
+</section>
+
+<section>
+<h2>6️⃣ الدوال (Functions)</h2>
+<div class="example">
+<code>
+int sum(int a,int b){<br>
+&nbsp;&nbsp;return a+b;<br>
+}<br>
+cout &lt;&lt; sum(5,3) &lt;&lt; endl; // 8
+</code>
+</div>
+</section>
+
+<section>
+<h2>7️⃣ المصفوفات (Arrays)</h2>
+<div class="example">
+<code>int numbers[5] = {1,2,3,4,5};</code>
+<code>cout &lt;&lt; numbers[0] &lt;&lt; endl; // 1</code>
+</div>
+</section>
+
+<section>
+<h2>8️⃣ الكائنات (Objects)</h2>
+<div class="example">
+<code>
+class Person {<br>
+&nbsp;&nbsp;public:<br>
+&nbsp;&nbsp;string name;<br>
+&nbsp;&nbsp;int age;<br>
+};<br>
+Person p;<br>
+p.name = "أحمد";<br>
+p.age = 25;
+</code>
+</div>
+</section>
+
+<section>
+<h2>9️⃣ التعليقات</h2>
+<div class="example">
+<code>// تعليق على سطر واحد</code>
+<code>/* تعليق على أكثر من سطر */</code>
+</div>
+</section>
+
+<section>
+<h2>🔟 الطباعة والإدخال</h2>
+<div class="example">
+<code>cout &lt;&lt; "مرحباً" &lt;&lt; endl;</code>
+<code>int num;<br>cin &gt;&gt; num;</code>
+</div>
+</section>
+
+<section>
+<h2>الختام</h2>
+<p>بهذا الموقع لديك أهم مفاهيم C++ للمبتدئين مع أمثلة عملية يمكن تعديلها وتشغيلها باستخدام أي مترجم C++.  
+الخطوة التالية: تعلم البرمجة الكائنية، المؤشرات، والمكتبات القياسية STL.</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2024 تعلم C++. جميع الحقوق محفوظة.</p>
+
+</body>
+</html>

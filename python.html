@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تعلم Python – دليل شامل</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        direction: rtl;
+        line-height: 1.6;
+        margin: 0;
+        background: #f4f4f4;
+        color: #333;
+    }
+    header, footer {
+        background: #6f42c1;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+    main {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    .top {
+        background-color: #6f42c1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        border-radius: 20px;
+        margin: 10px ;
+        color: white;
+    }
+    h2, h3 { color: #6f42c1; }
+    code {
+        background: #eee;
+        padding: 5px;
+        border-radius: 5px;
+        display: block;
+        margin: 5px 0;
+        direction: ltr;
+    }
+    section { margin-bottom: 30px; }
+    .example {
+        background: #f9f9f9;
+        border-left: 4px solid #6f42c1;
+        padding: 10px;
+        margin-top: 5px;
+    }
+         .top h1 {
+             margin-top: 0px;
+             color: black;
+         }
+         .top li {
+             list-style: none;
+             display: inline-block;
+             margin-left: 15px;
+         }
+         .top li a {
+             text-decoration: none;
+             color: black;
+             font-weight: bold;
+         }
+         
+</style>
+</head>
+<body>
+<div class="top">
+    <h1>magkcod</h1>
+    <li><a href="index.html">الرئيسي</a></li>
+    <li><a href="log.html">اللغات</a></li>
+    <li><a href="7yl.html">عن الموقع</a></li>
+</div>
+<header>
+    <h1>دليل شامل لتعلم Python</h1>
+    <h1>أهم المفاهيم والأمثلة العملية لتعلم بايثون بسرعة</h1>
+</header>
+
+<main>
+
+<section>
+<h2>مقدمة</h2>
+<p>Python هي لغة برمجة سهلة وقوية تُستخدم في تطوير الويب، علوم البيانات، الذكاء الاصطناعي، وأتمتة المهام. في هذا الموقع، سنتعرف على أهم مفاهيم Python مع أمثلة عملية.</p>
+</section>
+
+<section>
+<h2>1️⃣ المتغيرات والأنواع</h2>
+<div class="example">
+<code>name = "أحمد"  # نص</code>
+<code>age = 25        # رقم صحيح</code>
+<code>height = 1.75   # رقم عشري</code>
+<code>is_student = True  # بوليان</code>
+</div>
+</section>
+
+<section>
+<h2>2️⃣ العمليات الحسابية</h2>
+<div class="example">
+<code>sum = 5 + 3</code>
+<code>diff = 10 - 4</code>
+<code>mult = 6 * 2</code>
+<code>div = 8 / 2</code>
+<code>mod = 7 % 3</code>
+<code>exp = 2 ** 3</code>
+</div>
+</section>
+
+<section>
+<h2>3️⃣ الشروط</h2>
+<div class="example">
+<code>
+if age &gt;= 18:<br>
+&nbsp;&nbsp;print("بالغ")<br>
+else:<br>
+&nbsp;&nbsp;print("قاصر")
+</code>
+</div>
+</section>
+
+<section>
+<h2>4️⃣ الحلقات</h2>
+<div class="example">
+<code>for i in range(5):<br>&nbsp;&nbsp;print(i)</code>
+<p>حلقة for من 0 إلى 4.</p>
+<code>i = 0<br>while i &lt; 5:<br>&nbsp;&nbsp;print(i)<br>&nbsp;&nbsp;i += 1</code>
+<p>حلقة while.</p>
+</div>
+</section>
+
+<section>
+<h2>5️⃣ القوائم (Lists)</h2>
+<div class="example">
+<code>fruits = ["تفاح", "موز", "برتقال"]</code>
+<code>print(fruits[0])  # تفاح</code>
+<code>fruits.append("كيوي")</code>
+</div>
+</section>
+
+<section>
+<h2>6️⃣ القواميس (Dictionaries)</h2>
+<div class="example">
+<code>
+person = {"name":"أحمد", "age":25}<br>
+print(person["name"])  # أحمد
+</code>
+</div>
+</section>
+
+<section>
+<h2>7️⃣ الدوال (Functions)</h2>
+<div class="example">
+<code>
+def greet(name):<br>
+&nbsp;&nbsp;return "مرحباً " + name<br>
+print(greet("أحمد"))
+</code>
+</div>
+</section>
+
+<section>
+<h2>8️⃣ السلاسل النصية (Strings)</h2>
+<div class="example">
+<code>text = "مرحبا"</code>
+<code>print(text.upper())   # MARHBA</code>
+<code>print(text.lower())   # مرحبا</code>
+<code>print(len(text))      # طول النص</code>
+</div>
+</section>
+
+<section>
+<h2>9️⃣ المجموعات (Tuples & Sets)</h2>
+<div class="example">
+<code>point = (10, 20)  # Tuple ثابت</code>
+<code>colors = {"أحمر","أخضر","أزرق"}  # Set فريد</code>
+</div>
+</section>
+
+<section>
+<h2>🔟 استيراد المكتبات (Modules)</h2>
+<div class="example">
+<code>import math</code>
+<code>print(math.sqrt(16))  # 4.0</code>
+<code>from random import randint</code>
+<code>print(randint(1,10))  # رقم عشوائي بين 1 و 10</code>
+</div>
+</section>
+
+<section>
+<h2>الختام</h2>
+<p>بهذا الموقع لديك أهم مفاهيم Python للمبتدئين مع أمثلة عملية يمكن تعديلها وتشغيلها.  
+الخطوة التالية: تعلم التعامل مع الملفات، القوائم المتقدمة، البرمجة الكائنية OOP، وبيانات الويب.</p>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2024 موقع تعلم البرمجة. جميع الحقوق محفوظة.</p>
+</footer>
+</body>
+</html>

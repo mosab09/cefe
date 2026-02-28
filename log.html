@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>magkcod</title>
+
+<style>
+body{
+    background-color: midnightblue;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Top Bar ===== */
+.top{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    margin: 10px;
+    flex-wrap: wrap; /* مهم للجوال */
+}
+
+.top h1{
+    margin: 0;
+    color: black;
+}
+
+.top ul{
+    padding: 0;
+    margin: 0;
+}
+
+.top li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.top li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* ===== Buttons ===== */
+button{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+/* ===== Cards ===== */
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding: 20px;
+}
+
+.container section{
+    background: white;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px){
+    .container{
+        grid-template-columns: 1fr;
+    }
+
+    .top{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .top li{
+        margin: 10px;
+    }
+
+    button{
+        width: 80%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="top">
+    <h1>magkcod</h1>
+    <ul>
+        <li><a href="index.html">الرئيسي</a></li>
+        <li><a href="log.html">اللغات</a></li>
+        <li><a href="7yl.html">عن الموقع</a></li>
+    </ul>
+</div>
+
+<div class="container">
+
+<section>
+    <h1>HTML</h1>
+    <p>تعلم HTML من هنا</p>
+    <button onclick="ff()">اضغط هنا</button>
+</section>
+
+<section>
+    <h1>CSS</h1>
+    <p>تعلم CSS من هنا</p>
+    <button onclick="ff1()">اضغط هنا</button>
+</section>
+
+<section>
+    <h1>JavaScript</h1>
+    <p>تعلم JavaScript من هنا</p>
+    <button onclick="ff2()">اضغط هنا</button>
+</section>
+
+<section>
+    <h1>Python</h1>
+    <p>تعلم Python من هنا</p>
+    <button onclick="ff3()">اضغط هنا</button>
+</section>
+
+<section>
+    <h1>Java</h1>
+    <p>تعلم Java من هنا</p>
+    <button onclick="ff4()">اضغط هنا</button>
+</section>
+
+<section>
+    <h1>C++</h1>
+    <p>تعلم C++ من هنا</p>
+    <button onclick="ff5()">اضغط هنا</button>
+</section>
+
+</div>
+
+<script>
+function ff(){ location.href="tghth.html"; }
+function ff1(){ location.href="css.html"; }
+function ff2(){ location.href="javascript.html"; }
+function ff3(){ location.href="python.html"; }
+function ff4(){ location.href="java.html"; }
+function ff5(){ location.href="c++.html"; }
+</script>
+
+</body>
+</html>
